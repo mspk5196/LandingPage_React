@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import './NavLinks.scss'
+import logo from '../../assets/logo.png'
 
 export default function NavLink() {
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ export default function NavLink() {
     return (
 
         <div className='nav-link-desktop'>
-            <h2 id='title'><img src="images/logo.png" alt="logo" />websole</h2>
+            <h2 id='title'><img src={logo} alt="logo" />websole</h2>
             <ul>
                 <li onClick={() => navigate('/Home')}>Home</li>
                 <li onClick={() => navigate('/About')}>About</li>

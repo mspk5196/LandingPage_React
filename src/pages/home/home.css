@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.totDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.totDiv .texts {
+  margin: 0 auto;
+  text-align: center;
+  order: 2;
+}
+.totDiv .texts #textTit {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgba(204, 204, 204, 0.5019607843);
+  border-radius: 10px;
+  padding: 0.8rem 0.6rem;
+}
+.totDiv .texts h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+}
+.totDiv .texts p {
+  font-family: "Open Sans", sans-serif;
+  text-wrap: wrap;
+  width: auto;
+  margin: 0 auto;
+}
+.totDiv .texts button {
+  background-color: rgb(48, 166, 1);
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: white;
+}
+.totDiv .texts button:hover {
+  border: 2px solid rgb(48, 166, 1);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.totDiv .texts button:active {
+  border: 2px solid black;
+  background-color: rgb(48, 166, 1);
+  color: white;
+  cursor: default;
+}
+.totDiv .form-container {
+  background-color: rgba(255, 255, 255, 0.6941176471);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  width: 90%;
+  max-width: 350px;
+  margin: 20px auto 0px auto;
+}
+.totDiv .form-container h2 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+.totDiv .form-container p {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #202020;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.totDiv .form-container input[type=text],
+.totDiv .form-container input[type=email],
+.totDiv .form-container input[type=tel] {
+  width: calc(100% - 20px);
+  height: 2.5rem;
+  width: 300px;
+  height: 30px;
+  padding: 10px;
+  display: block;
+  font-size: 15px;
+  border: 1px solid #858484;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+.totDiv .form-container .radio-group {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.totDiv .form-container .radio-group input[type=radio] {
+  margin-right: 5px;
+}
+.totDiv .form-container #labelRadio {
+  font-family: "Poppins", sans-serif;
+}
+.totDiv .form-container button {
+  background-color: rgb(48, 166, 1);
+  border: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.totDiv .form-container button:hover {
+  border: 2px solid rgb(48, 166, 1);
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.totDiv .form-container button:active {
+  border: 2px solid black;
+  background-color: rgb(48, 166, 1);
+  color: white;
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .totDiv {
+    padding: 0 40px;
+  }
+  .totDiv .texts {
+    text-align: left;
+    order: 0;
+    width: 50%;
+  }
+  .totDiv .form-container {
+    width: 40%;
+    order: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .totDiv .texts {
+    width: 50%;
+  }
+  .totDiv .form-container {
+    width: 30%;
+  }
+}/*# sourceMappingURL=home.css.map */

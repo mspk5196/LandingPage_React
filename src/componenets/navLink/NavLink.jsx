@@ -20,10 +20,11 @@ export default function NavLink() {
         <div className='nav-link-desktop'>
             <h2 id='title'><img src={logo} alt="logo" />websole</h2>
             <ul>
-                <li onClick={() => navigate('/Home')}>Home</li>
-                <li onClick={() => navigate('/About')}>About</li>
-                <li onClick={() => navigate('/Contact')}>Contact</li>
-                <li id='signInBtn' onClick={()=> {navigate(isLoggedIn ? '/' : 'signInPage'); isLoggedIn ? signOut : null}}>{isLoggedIn ? 'SIGN OUT' : 'SIGN IN'}</li>
+                <li onClick={() => navigate('/LandingPage_React/Home')}>Home</li>
+                <li onClick={() => navigate('/LandingPage_React/About')}>About</li>
+                <li onClick={() => navigate('/LandingPage_React/Contact')}>Contact</li>
+                <li id='signInBtn' onClick={()=> {navigate(isLoggedIn ? '/LandingPage_React/' : '/LandingPage_React/signInPage'); isLoggedIn ? signOut : null}}>{isLoggedIn ? 'SIGN OUT' : 'SIGN IN'}</li>
+
             </ul>
         </div>
 

@@ -35,12 +35,12 @@ const SignInPage = ({ setIsLoggedIn }) => {
     }
   }
   function cancelSignIn() {
-    location.reload();
+    navigate('/LandingPage_React/Home')
   }
   return (
     <div>
-      <div id='signInForm'>
-        <form action="SIGN IN" onSubmit={formSignIn}>
+      <div id='signInForm' onSubmit={formSignIn}>
+        <form action="SIGN IN">
 
           <input type="email" name="email" placeholder='Enter your email' id="Email" required />
           <br />

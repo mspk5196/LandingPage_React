@@ -1,3 +1,6 @@
+$PrimaryFont: "Poppins", sans-serif;
+$PrimaryButtonColor: rgb(1, 161, 166);
+
 div {
 
     #ContactForm {
@@ -6,10 +9,10 @@ div {
         text-align: center;
 
         input {
-            border-top: 2px solid orange;
-            border-left: 2px solid orange;
-            border-right: 5px solid rgba(255, 166, 0, 0.381);
-            border-bottom: 5px solid rgba(255, 166, 0, 0.381);
+            border-top: 2px solid $PrimaryButtonColor;
+            border-left: 2px solid $PrimaryButtonColor;
+            border-right: 5px solid rgba(1, 161, 166, 0.443);
+            border-bottom: 5px solid rgba(1, 161, 166, 0.443);
             border-radius: 10px;
             height: 50px;
             width: 250px;
@@ -18,10 +21,10 @@ div {
         }
 
         textarea {
-            border-top: 2px solid orange;
-            border-left: 2px solid orange;
-            border-right: 5px solid rgba(255, 166, 0, 0.381);
-            border-bottom: 5px solid rgba(255, 166, 0, 0.381);
+            border-top: 2px solid $PrimaryButtonColor;
+            border-left: 2px solid $PrimaryButtonColor;
+            border-right: 5px solid rgb(1, 161, 166, 0.443);
+            border-bottom: 5px solid rgb(1, 161, 166, 0.443);
             border-radius: 10px;
             height: 90px;
             width: 250px;
@@ -30,34 +33,62 @@ div {
             resize: none;
         }
 
+        // button {
+        //     background-color: rgb(0, 183, 255);
+        //     border: none;
+        //     color: white;
+        //     border-radius: 10px;
+        //     width: 80px;
+        //     height: 50px;
+        //     margin-top: 10px;
+        //     margin-left: 10px;
+        //     font-size: 15px;
+
+        //     &:hover {
+        //         background-color: rgba(255, 255, 255, 0);
+        //         color: black;
+        //         border-top: 2px solid rgb(0, 183, 255);
+        //         border-left: 2px solid rgb(0, 183, 255);
+        //         border-right: 5px solid rgba(0, 183, 255, 0.397);
+        //         border-bottom: 5px solid rgb(0, 183, 255, 0.397);
+        //         cursor: pointer;
+        //     }
+
+        //     &:active {
+        //         background-color: rgb(255, 166, 0);
+        //         color: white;
+        //         border-right: 2px solid rgb(0, 183, 255);
+        //         border-bottom: 2px solid rgb(0, 183, 255);
+        //         border-top: 5px solid rgba(0, 183, 255, 0.397);
+        //         border-left: 5px solid rgb(0, 183, 255, 0.397);
+        //         cursor: default;
+        //     }
+        // }
+
         button {
-            background-color: rgb(0, 183, 255);
+            background-color: $PrimaryButtonColor;
             border: none;
-            color: white;
             border-radius: 10px;
+            font-family: $PrimaryFont;
+            font-size: 15px;
+            font-weight: 500;
             width: 80px;
             height: 50px;
             margin-top: 10px;
             margin-left: 10px;
-            font-size: 15px;
+            color: white;
 
             &:hover {
-                background-color: rgba(255, 255, 255, 0);
+                border: 2px solid $PrimaryButtonColor;
+                background-color: white;
                 color: black;
-                border-top: 2px solid rgb(0, 183, 255);
-                border-left: 2px solid rgb(0, 183, 255);
-                border-right: 5px solid rgba(0, 183, 255, 0.397);
-                border-bottom: 5px solid rgb(0, 183, 255, 0.397);
                 cursor: pointer;
             }
 
             &:active {
-                background-color: rgb(255, 166, 0);
+                border: 2px solid black;
+                background-color: $PrimaryButtonColor;
                 color: white;
-                border-right: 2px solid rgb(0, 183, 255);
-                border-bottom: 2px solid rgb(0, 183, 255);
-                border-top: 5px solid rgba(0, 183, 255, 0.397);
-                border-left: 5px solid rgb(0, 183, 255, 0.397);
                 cursor: default;
             }
         }

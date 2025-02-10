@@ -142,7 +142,7 @@ export default function NavLinkMobile() {
           <List> 
             {['Home', 'About', 'Contact'].map((text, index) => ( 
               <ListItem key={text} disablePadding> 
-                <ListItemButton onClick={() => { navigate(`/${text}`); handleDrawerClose(); }}> 
+                <ListItemButton onClick={() => { navigate(`/LandingPage_React/${text}`); handleDrawerClose(); }}> 
                   <ListItemIcon> 
                     {index === 0 ? <img src={HomeIcon} alt="Home" style={{ width: '25px', height: '25px' }}/> : index === 1 ? <img src={AboutIcon} alt="About" style={{ width: '25px', height: '25px' }}/> : <img src={ContactIcon} alt="Contact" style={{ width: '25px', height: '25px' }}/>} 
                   </ListItemIcon> 
